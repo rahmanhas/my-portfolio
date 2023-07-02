@@ -10,6 +10,11 @@ const NavBar = () => {
             </NavLink>
         </li>
         <li>
+            <NavLink to="/aboutme" activeClassName="active">
+                About Me
+            </NavLink>
+        </li>
+        <li>
             <NavLink to="/skills" activeClassName="active">
                 My Skills
             </NavLink>
@@ -45,7 +50,7 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                
+
             </div>
         </div>
     );
