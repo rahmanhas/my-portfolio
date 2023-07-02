@@ -1,3 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.skills-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.skills-section .skill-logo {
+    width: 100px;
+    /* Adjust the size as needed */
+    height: 80px;
+    /* Add other styling properties for the logos */
+    margin-right: 20px;
+    /* Adjust the spacing between logos */
+    margin-top: 20px;
+    /* Adjust the spacing between logos */
+    margin-bottom: 20px;
+    /* Adjust the spacing between logos */
+}
+
+@keyframes logoAnimation {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.skills-section {
+    animation: slideAnimation 25s linear infinite;
+}
+
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 500px) {
+    .skills-section .skill-logo {
+        width: 40px;
+        /* Adjust the size for smaller devices */
+        height: 25px;
+        /* Add other styling properties for smaller devices */
+        margin-right: 5px;
+        /* Adjust the spacing between logos */
+        margin-top: 5px;
+        /* Adjust the spacing between logos */
+        margin-bottom: 5px;
+        /* Adjust the spacing between logos */
+    }
+}
